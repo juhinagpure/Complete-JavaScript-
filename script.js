@@ -171,7 +171,7 @@
 //   }  while(j < arr.length);
 
 
-// let myArr = ["fan","camera",34,null,true];
+//  let myArr = ["fan","camera",34,null,true];
 // // Array Methods
 // console.log(myArr.length);
 // // myArr.pop();
@@ -183,7 +183,95 @@
 // console.log(myArr);
 
 // string methods in JavaScript 
-let mylovelystring = "Harry is a good boy";
-console.log(mylovelystring.length)
-console.log(mylovelystring.indexOf(""))
+// let mylovelystring = "Harry is a good boy";
+// // console.log(mylovelystring.length)
+// // console.log(mylovelystring.indexOf("good"))
+
+// // console.log(mylovelystring.slice(1,4))
+// d = mylovelystring.replace("juhi","anushka");
+// d = d.replace("good","bad");
+// console.log(d,mylovelystring)
+
+// let myDate = new Date();
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getDay());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getHours());
+
+// DOM Manipulation
+// let elem = document.getElementById("click");
+// console.log(elem)
+
+let elemClass = document.getElementsByClassName("container")
+// console.log(elemClass);
+// elemClass[0].style.background = 'yellow';
+elemClass[0].classList.add("bg-primary");
+elemClass[0].classList.add("text-success");
+// console.log(elem.innerHTML);
+// console.log(elem.innerText);
+
+// console.log(elemClass[0].innerHTML);
+// console.log(elemClass[0].innerText);
+
+tn = document.getElementsByTagName("button");
+console.log(tn);
+createdElement = document.createElement('p')
+createdElement.innerText = "This is a created para";
+tn[0].appendChild(createdElement);
+createdElement2 = document.createElement('b');
+createdElement2.innerText = "This is a created bold";
+tn[0].replaceChild(createdElement2, createdElement);
+// removeChild(Element); ---> removes an element
+
+
+// Selecting using Query
+sel = document.querySelector('.container')
+console.log(sel)
+sel = document.querySelectorAll('.container')
+console.log(sel)
+
+function clicked(){
+    console.log('The button was clicked')
+}
+window.onload = function(){
+    console.log('The document was loaded')
+}
+
+// Events in JavaScript
+firstContainer.addEventListener('click', function(){
+    console.log('clicked on container');
+})
+
+firstContainer.addEventListener('mouseover', function(){
+    console.log('mouse on container');
+})
+
+firstContainer.addEventListener('mouseout', function(){
+    console.log('mouse out of container');
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
